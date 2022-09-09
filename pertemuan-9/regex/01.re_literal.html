@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Belajar JavaScript</title>
+</head>
+
+<body>
+    <h1>Belajar JavaScript</h1>
+    <script>
+        let foo = /ab+c/;
+
+        console.log(foo); // /ab+c/
+        console.log(typeof foo); // object
+
+        let bar = new RegExp("ab+c");
+
+        console.log(bar); // /ab+c/
+        console.log(typeof bar); // object
+
+        console.log(
+            "Using \\n \nWill shift the characters after \n one row down"
+        );
+        console.log(
+            "Using \\t \twill shift the characters after \\t one tab length to the right"
+        );
+    </script>
+</body>
+
+</html>
