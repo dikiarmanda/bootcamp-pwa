@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Belajar JavaScript Number</title>
+  </head>
+  <body>
+    <h1>Belajar JavaScript Number</h1>
+    <script>
+      // console.log(Number.EPSILON); // 2.220446049250313e-16
+      // console.log(Number.MAX_SAFE_INTEGER); // 9007199254740991
+      // console.log(Number.MAX_VALUE); // 1.7976931348623157e+308
+      // console.log(Number.MIN_SAFE_INTEGER); // -9007199254740991
+      // console.log(Number.MIN_VALUE); // 5e-324
+      // console.log(Number.NaN); // NaN
+      // console.log(Number.NEGATIVE_INFINITY); // -Infinity
+      // console.log(Number.POSITIVE_INFINITY); // Infinity
+
+      //  isNan
+      // let foo = 5;
+      // console.log(Number.isNaN(foo)); // false
+
+      // foo = 5 / "a";
+      // console.log(Number.isNaN(foo)); // true
+
+      // foo = Number.NaN;
+      // console.log(Number.isNaN(foo)); // true
+
+      // let foo = NaN;
+
+      // console.log(Number.isNaN(foo)); // true
+      // console.log(foo == NaN); // false
+      // console.log(foo === NaN); // false
+
+      // isFinite
+      // let foo;
+
+      // foo = 6;
+      // console.log(Number.isFinite(foo)); // true
+
+      // foo = 3.21456;
+      // console.log(Number.isFinite(foo)); // true
+
+      // foo = "a";
+      // console.log(Number.isFinite(foo)); // false
+
+      // foo = 1 / 0;
+      // console.log(Number.isFinite(foo)); // false
+
+      // foo = Number.NEGATIVE_INFINITY;
+      // console.log(Number.isFinite(foo)); // false
+
+      // foo = Number.NaN;
+      // console.log(Number.isFinite(foo)); // false
+
+      // isInteger
+      // let foo;
+
+      // foo = 6;
+      // console.log(Number.isInteger(foo)); // true
+      // console.log(Number.isSafeInteger(foo)); // true
+
+      // foo = 3.21456;
+      // console.log(Number.isInteger(foo)); // false
+      // console.log(Number.isSafeInteger(foo)); // false
+
+      // foo = 1 / 0;
+      // console.log(Number.isInteger(foo)); // false
+      // console.log(Number.isSafeInteger(foo)); // false
+
+      // foo = 9007199254740992;
+      // console.log(Number.isInteger(foo)); // true
+      // console.log(Number.isSafeInteger(foo)); // false
+
+      // parseFloat
+      // let foo = "1234";
+      // console.log(typeof foo); // string
+
+      // foo = Number.parseFloat(foo);
+      // console.log(foo); // 1234
+      // console.log(typeof foo); // number
+
+      // let bar = "-1234.5678";
+      // console.log(typeof bar); // string
+
+      // bar = Number.parseFloat(bar);
+      // console.log(bar); // -1234.5678
+      // console.log(typeof bar); // number
+
+      // console.log(Number.parseFloat("12.045 potong ayam")); // 12.045
+      // console.log(Number.parseFloat("Ada 12.045 potong ayam")); // NaN
+
+      // parseInt
+      let foo = "1234";
+      console.log(typeof foo); // string
+
+      foo = Number.parseInt(foo);
+      console.log(foo); // 1234
+      console.log(typeof foo); // number
+
+      let bar = "-1234.5678";
+      console.log(typeof bar); // string
+
+      bar = Number.parseInt(bar);
+      console.log(bar); // -1234
+      console.log(typeof bar); // number
+
+      console.log(Number.parseInt("12.045 potong ayam")); // 12
+      console.log(Number.parseInt("Ada 12.045 potong ayam")); // NaN
+    </script>
+  </body>
+</html>

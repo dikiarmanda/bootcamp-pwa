@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Belajar JavaScript Class Object</title>
+  </head>
+  <body>
+    <h1>Belajar JavaScript Class Object</h1>
+    <script>
+      function Mobil(namaArg, tipeArg, hargaArg) {
+        let test = "test";
+        this.nama = namaArg;
+        this.tipe = tipeArg;
+        this.harga = hargaArg;
+        this.hidupkan2 = () => `Mesin ${this.nama} dihidupkan`;
+        this.pergi = function (tempat) {
+          return `Pergi ke ${tempat} dengan ${this.nama}`;
+        };
+      }
+
+      let mobilAndi = new Mobil("Daihatsu", "MPV", 220000000);
+      let mobilJoko = new Mobil("Toyota", "Sedan", 750000000);
+      let mobilRara = new Mobil("Toyota", "Sedan", 750000000);
+      console.log(mobilRara.nama);
+      console.log(mobilRara.test);
+
+      console.log(mobilAndi.nama);
+      console.log(mobilJoko.nama);
+      console.log(mobilAndi.hidupkan2());
+      console.log(mobilJoko.hidupkan2());
+      console.log(mobilAndi.pergi("Surabaya"));
+      console.log(mobilJoko.pergi("Jogja"));
+
+      console.log(mobilAndi instanceof mobil);
+      console.log(mobilJoko instanceof mobil);
+    </script>
+  </body>
+</html>

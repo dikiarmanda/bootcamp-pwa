@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Belajar JavaScript Class Object</title>
+  </head>
+  <body>
+    <h1>Belajar JavaScript Class Object</h1>
+    <script>
+      class Mobil {
+        constructor(nama) {
+          this.nama = nama;
+        }
+        infoMobil() {
+          return `Mobil ${this.nama}`;
+        }
+      }
+
+      class Bus extends Mobil {
+        constructor(nama) {
+          super(nama);
+          this.tipe;
+        }
+        infoBus() {
+          return `Bus ${this.nama}`;
+        }
+      }
+
+      class Bus2 extends Mobil {
+        constructor(nama) {
+          super(nama);
+          this.tipe;
+        }
+        infoBus2() {
+          return `Bus2 ${this.nama}`;
+        }
+      }
+
+      let busBobi1 = new Bus();
+      let busBobi2 = new Bus2();
+      console.log(busBobi1 instanceof Bus2);
+      console.log(busBobi2 instanceof Bus);
+      // console.log(busBobi.infoMobil());
+      // console.log(busBobi.infoBus());
+
+      // console.log(busBobi instanceof Mobil);
+      // console.log(busBobi instanceof Bus);
+
+      let busBobi = new Bus("Scania K360TB");
+      console.log(busBobi.infoBus());
+      console.log(busBobi.infoMobil());
+    </script>
+  </body>
+</html>

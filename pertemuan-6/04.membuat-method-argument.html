@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Belajar JavaScript</title>
+  </head>
+  <body>
+    <h1>Belajar JavaScript</h1>
+    <script>
+      let mobil = {
+        nama: "Toyota Avanza",
+        tipe: "MPV",
+        harga: 300000000,
+        warna: "merah",
+        // hidupkan: function () {
+        //   return "Mesin dihidupkan";
+        // }
+        // hidupkan() {
+        //   return "Mesin dihidupkan";
+        // }
+        pergi: (tempat) => `Pergi ke ${tempat}`
+      };
+
+      // mobil.hidupkan = () => "Mesin dihidupkan";
+      // mobil.pergi = (tempat) => `Pergi ke ${tempat}`;
+
+      // console.log(mobil.hidupkan());
+      // console.log(mobil.pergi("Surabaya"));
+      // console.log(mobil["pergi"]("Jogja"));
+
+      console.log(mobil.pergi("Surabaya"));
+      mobil.pergi = (tempat) => `Balik ke ${tempat}`;
+      console.log(mobil.pergi("Jogja"));
+    </script>
+  </body>
+</html>

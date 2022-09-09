@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Belajar JavaScript Number</title>
+  </head>
+  <body>
+    <h1>Belajar JavaScript Number</h1>
+    <script>
+      // exponential
+      // let foo = 5000.123456789;
+
+      // console.log(foo.toExponential()); // 5.000123456789e+3
+      // console.log(foo.toExponential(1)); // 5.0e+3
+      // console.log(foo.toExponential(5)); // 5.00012e+3
+      // console.log(foo.toExponential(10)); // 5.0001234568e+3
+      // console.log(foo.toExponential(20)); // 5.00012345678899964696e+3
+
+      // console.log((4.32345).toExponential(2)); // 4.32e+0
+      // console.log((4.32345).toExponential(2)); // 4.32e+0
+
+      // fixed
+      // let foo = 5000.123456789;
+
+      // console.log(foo.toFixed()); // 5000
+      // console.log(foo.toFixed(1)); // 5000.1
+      // console.log(foo.toFixed(5)); // 5000.12346
+      // console.log(foo.toFixed(10)); // 5000.1234567890
+      // console.log(foo.toFixed(20)); // 5000.12345678899964696029
+
+      // console.log((4.32745).toFixed(2)); // 4.33
+      // console.log((500).toFixed(2)); // 500.00
+      // console.log((1.23e6).toFixed(2)); // 1230000.00
+
+      // toPrecision
+      // let foo = 5000.123456789;
+
+      // console.log(foo.toPrecision()); // 5000.123456789
+      // console.log(foo.toPrecision(1)); // 5e+3
+      // console.log(foo.toPrecision(5)); // 5000.1
+      // console.log(foo.toPrecision(10)); // 5000.123457
+      // console.log(foo.toPrecision(20)); // 5000.1234567889996470
+
+      // console.log((4.32745).toPrecision(2)); // 4.3
+      // console.log((500).toPrecision(7)); // 500.0000
+      // console.log((1.23e6).toPrecision(7)); // 1230000
+
+      // to String
+      // let foo1 = 230;
+      // console.log(typeof foo1); // number
+
+      // bar1 = foo1.toString();
+      // console.log(typeof bar1); // string
+      // console.log(bar1); // 230
+
+      // let foo2 = new Number(230);
+      // console.log(typeof foo2); // object
+
+      // bar2 = foo2.toString();
+      // console.log(typeof bar2); // string
+      // console.log(bar2); // 230
+
+      // toLocaleString
+      // let foo = 1234500.346;
+
+      // console.log(foo.toString()); // 1234500.346
+      // console.log(foo.toLocaleString()); // 1,234,500.346
+
+      // let foo = 1234500.346;
+
+      // console.log(foo.toLocaleString("id-ID")); // 1.234.500,346
+      // console.log(foo.toLocaleString("en-GB")); // 1,234,500.346
+      // console.log(foo.toLocaleString("fr-FR")); // 1 234 500,346
+      // console.log(foo.toLocaleString("ar-SA")); // ١٬٢٣٤٬٥٠٠٫٣٤٦
+
+      // locale string currency
+      let foo = 1234500.346;
+
+      console.log(foo.toLocaleString("en-US", { style: "decimal" }));
+      //1,234,500.346
+
+      console.log(foo.toLocaleString("en-US", { style: "percent" }));
+      // 123,450,035%
+
+      console.log(
+        foo.toLocaleString("en-US", { style: "currency", currency: "USD" })
+      );
+      // $1,234,500.35
+
+      console.log(
+        foo.toLocaleString("de-DE", { style: "currency", currency: "EUR" })
+      );
+      // 1.234.500,35 €
+
+      console.log(
+        foo.toLocaleString("ja-JP", { style: "currency", currency: "JPY" })
+      );
+      // ￥1,234,500
+
+      console.log(
+        foo.toLocaleString("id-ID", { style: "currency", currency: "IDR" })
+      );
+      // Rp 1.234.500,35
+    </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Belajar JavaScript Class Object</title>
+  </head>
+  <body>
+    <h1>Belajar JavaScript Class Object</h1>
+    <script>
+      class Mobil {
+        static warna = "Biru";
+        static infoMobil() {
+          return "ini dari class Mobil";
+        }
+        static jumlahMobil = 0;
+        constructor() {
+          Mobil.jumlahMobil++;
+        }
+      }
+
+      console.log(Mobil.warna);
+      console.log(Mobil.infoMobil());
+
+      let mobilAnto = new Mobil();
+      // console.log(mobilAnto.warna);
+      // console.log(mobilAnto.infoMobil());
+
+      let mobilRidho = new Mobil();
+      let mobilRiri = new Mobil();
+
+      console.log("Total Mobil: " + Mobil.jumlahMobil);
+    </script>
+  </body>
+</html>

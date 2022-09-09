@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Belajar JavaScript</title>
+  </head>
+  <body>
+    <h1>Belajar JavaScript</h1>
+    <script>
+      // function angka(a, b, ...sisa) {
+      //   console.log(a); // 4
+      //   console.log(b); // 8
+      //   console.log(sisa); // Array [ 3, 7 ]
+      // }
+
+      // angka(4, 8, 3, 7);
+
+      function rata2(...semuaArg) {
+        let totalArg = semuaArg.length;
+        let hasil = 0;
+        for (let i of semuaArg) {
+          hasil = hasil + i;
+        }
+        return hasil / totalArg;
+      }
+
+      let a = rata2(1, 9);
+      console.log(a); // 5
+
+      let b = rata2(4, 8, 3, 7);
+      console.log(b); // 5.5
+
+      let c = rata2(14, 34, 17, 55, 98, 22, 26);
+      console.log(c); // 38
+    </script>
+  </body>
+</html>

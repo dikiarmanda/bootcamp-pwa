@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Set</title>
+  </head>
+  <body>
+    <h1>
+      Tipe Data Set
+    </h1>
+    <script>
+      let foo = new Set();
+
+      // tambah element
+      foo.add("a");
+      foo.add(100);
+      foo.add("Andi");
+      foo.add(true);
+      foo.add("a");
+
+      console.log(foo); // Set(4) {'a', 100, 'Andi', true}
+      console.log(foo.size);
+      // hapus semua element
+      foo.clear();
+      console.log(foo); // Set(0) {size: 0}
+    </script>
+  </body>
+</html>

@@ -1,49 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Async</title>
-</head>
-
-<body>
+  </head>
+  <body>
     <h1>
-        Tunggu 3 detik unutk halaman ini berubah
+      Tunggu 3 detik unutk halaman ini berubah
     </h1>
     <p id="demo"></p>
 
     <script>
-        async function myDisplay() {
-            console.time();
-            let myPromise = new Promise(function (resolve) {
-                setTimeout(function () {
-                    resolve("Belajar ");
-                }, 0);
-            });
-            let myPromise2 = new Promise(function (resolve) {
-                setTimeout(function () {
-                    resolve("Javacript ");
-                }, 2000);
-            });
-            document.getElementById("demo").innerHTML += await myPromise2;
-            document.getElementById("demo").innerHTML += await myPromise;
-            console.timeEnd();
-        }
-        function tes1() {
-            document.getElementById("demo").innerHTML += "Belajar ";
-        }
-        function tes2() {
-            setTimeout(function () {
-                document.getElementById("demo").innerHTML += "Javascript ";
-            }, 3000);
-            // document.getElementById("demo").innerHTML += "Javascript ";
-        }
-        // tes2();
-        // tes1();
-        myDisplay();
-    </script>
-</body>
+      async function myDisplay() {
+        console.time();
+        let myPromise = new Promise(function (resolve) {
+          setTimeout(function () {
+            resolve("Belajar ");
+          }, 0);
+        });
+        let myPromise2 = new Promise(function (resolve) {
+          setTimeout(function () {
+            resolve("Javacript ");
+          }, 2000);
+        });
+        document.getElementById("demo").innerHTML += await myPromise2;
+        document.getElementById("demo").innerHTML += await myPromise;
+        console.timeEnd();
+      }
 
+      function tes1() {
+        document.getElementById("demo").innerHTML += "Belajar ";
+      }
+
+      function tes2() {
+        setTimeout(function () {
+          document.getElementById("demo").innerHTML += "Javascript ";
+        }, 3000); // document.getElementById("demo").innerHTML += "Javascript ";
+      }
+
+      // tes2();
+      // tes1();
+      myDisplay();
+    </script>
+  </body>
 </html>

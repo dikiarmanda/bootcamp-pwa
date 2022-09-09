@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BigInt</title>
+  </head>
+  <body>
+    <h1>
+      Tipe Data BigInt
+    </h1>
+    <script>
+      // console.log(Number.MAX_SAFE_INTEGER); // 9007199254740991
+
+      // let foo = 9007199254740991 + 1;
+      // let bar = 9007199254740991 + 2;
+      // let baz = 9007199254740991 + 3;
+
+      // console.log(foo); // 9007199254740992
+      // console.log(bar); // 9007199254740992
+      // console.log(baz); // 9007199254740994
+
+      let ininumber = 10;
+      let inistring = "10";
+      let bigFoo = 9007199254740991n + 1n;
+      let bigBar = 9007199254740991n + 2n;
+      let bigBaz = 9007199254740991n + 3n;
+
+      console.log(typeof ininumber);
+      console.log(typeof inistring);
+      console.log(typeof bigFoo);
+      // console.log(bigFoo); // 9007199254740992n
+      // console.log(bigBar); // 9007199254740993n
+      // console.log(bigBaz); // 9007199254740994n
+    </script>
+  </body>
+</html>

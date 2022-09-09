@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Belajar JavaScript</title>
+  </head>
+  <body>
+    <h1>Belajar JavaScript</h1>
+    <script>
+      let mahasiswa = [
+        {
+          nama: "Daud",
+          jurusan: "Sistem Informasi",
+          ipk: 3.85,
+          tesfunction: function () {
+            return "tes";
+          }
+        },
+        {
+          nama: "Dauds",
+          jurusan: "Sistem Informasis",
+          ipk: 3.85,
+          tesfunction: function () {
+            return "tes";
+          }
+        }
+      ];
+
+      for (let prop in mahasiswa) {
+        console.log("Isi Property " + prop + " = " + mahasiswa[prop]);
+        // console.log("Isi Property " + prop + " = " + mahasiswa.prop); // undefined
+      }
+      mahasiswa.map((prop) => {
+        console.log("Isi Property " + prop.nama);
+        // console.log("Isi Property " + prop + " = " + mahasiswa.prop); // undefined
+      });
+    </script>
+  </body>
+</html>

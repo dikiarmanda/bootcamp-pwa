@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Belajar JavaScript Class Object</title>
+  </head>
+  <body>
+    <h1>Belajar JavaScript Class Object</h1>
+    <script>
+      function Person(first, last, age, eyecolor) {
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+        this.eyeColor = eyecolor;
+      }
+
+      const myFather = new Person("John", "Doe", 50, "blue");
+      const myMother = new Person("Sally", "Rally", 48, "green");
+
+      // Person.nationality = "Indonesia";
+      Person.prototype.nationality = "English";
+      console.log(myFather.nationality);
+      console.log(myMother.nationality);
+      Person.prototype.nationality = "Indonesia";
+      console.log(myFather.firstName);
+      console.log(myFather.nationality);
+      console.log(myMother.nationality);
+    </script>
+  </body>
+</html>

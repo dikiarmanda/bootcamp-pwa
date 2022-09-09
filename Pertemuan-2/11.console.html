@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Console</title>
-</head>
-
-<body>
+  </head>
+  <body>
     <h1>
-        Belajar javascript console
+      Belajar javascript console
     </h1>
     <script>
-        console.log("ini log");
-        console.warn("ini warn");
-        console.error("ini error");
-        console.clear();
-        console.log("ini log baru");
-        console.assert(5 + 6 == 10, "Salah Bos!");
-        for (let i = 0; i < 5; i++) {
-            console.count("count ku");
-        }
-        console.dir({ fisrtName: "Daud", lastName: "Muhajir" });
-        console.log({ fisrtName: "Daud", lastName: "Muhajir" });
-        console.error({ fisrtName: "Daud", lastName: "Muhajir" });
-        console.table([
-            { fisrtName: "Daud", lastName: "Muhajir" },
-            { fisrtName: "Daud1", lastName: "Muhajir1" }
-        ]);
+      var a = "a";
+      var plus = "+";
+      var b = "b";
+      console.log(a.concat(plus).concat(b));
+      console.log(`${a}${plus}${b}`);
+      console.log("ini log");
+      console.warn("ini warn");
+      console.error("ini error");
+      // console.clear();
+      console.log("ini log baru");
+      console.assert(5 + 6 == 10, "Salah Bos!");
+      for (let i = 0; i < 5; i++) {
+        console.count("count ku");
+      }
+      console.dir({ fisrtName: "Daud", lastName: "Muhajir" });
+      console.log({ fisrtName: "Daud", lastName: "Muhajir" });
+      console.error({ fisrtName: "Daud", lastName: "Muhajir" });
+      console.table([
+        { fisrtName: "Daud", lastName: "Muhajir" },
+        { fisrtName: "Daud1", lastName: "Muhajir1" }
+      ]);
     </script>
-</body>
-
+  </body>
 </html>

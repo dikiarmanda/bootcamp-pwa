@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Belajar JavaScript</title>
+  </head>
+  <body>
+    <h1>Belajar JavaScript</h1>
+    <script>
+      let mahasiswa = {
+        nama: "Daud",
+        jurusan: "Sistem Informasi",
+        ipk: 3.85
+      };
+      // pake spread, copy, membuat objeck baru
+      // let mahasiswaBaru = { ...mahasiswa };
+      // tidak copy, jadi ketika diubah, ikut berubah
+      let mahasiswaBaru = mahasiswa;
+      console.log(mahasiswaBaru.jurusan); // SI
+      mahasiswaBaru.jurusan = "Teknik Informatika";
+
+      console.log(mahasiswa.jurusan); // SI
+      console.log(mahasiswaBaru.jurusan); // TI
+    </script>
+  </body>
+</html>

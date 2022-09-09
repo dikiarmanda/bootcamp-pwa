@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Operator Bitwise</title>
+  </head>
+  <body>
+    <h1>
+      Operator Bitwise
+    </h1>
+    <script>
+      let a = 0b10101010; // desimal 170
+      let b = 0b11011110; // desimal 222
+
+      console.log(a); // 170
+      console.log(b); // 222
+
+      let foo;
+
+      foo = a & b;
+      console.log(foo); // 138 desimal = 1000 1010 biner
+
+      foo = a | b;
+      console.log(foo); // 254 desimal = 1111 1110 biner
+
+      foo = a ^ b;
+      console.log(foo); // 116 desimal = 0111 0100 biner
+
+      foo = ~a;
+      console.log(foo); // -171 desimal
+
+      foo = a >> 2;
+      console.log(foo); // 42 desimal = 0010 1010 biner
+
+      foo = a << 3;
+      console.log(foo); // 1360 desimal = 0101 0101 0000 biner
+    </script>
+  </body>
+</html>

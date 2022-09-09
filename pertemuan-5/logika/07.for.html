@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Belajar JavaScript</title>
+  </head>
+  <body>
+    <h1>Belajar JavaScript</h1>
+    <script>
+      // let siswa = ["Andri", "Joko", "Sukma", "Daud"];
+      // console.log(siswa.length);
+      // for (let i = 0; i < siswa.length; i++) {
+      //   console.log(siswa[i]);
+      // }
+
+      let siswaMap = new Map([
+        ["satu", "Andri"],
+        ["dua", "Joko"],
+        ["tiga", "Sukma"],
+        ["empat", "Rina"],
+        ["lima", "Sari"]
+      ]);
+
+      for (let siswa of siswaMap) {
+        console.log(siswa);
+      }
+    </script>
+  </body>
+</html>

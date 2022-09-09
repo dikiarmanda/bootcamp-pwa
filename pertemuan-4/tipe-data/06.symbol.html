@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Symbol</title>
+  </head>
+  <body>
+    <h1>
+      Tipe Data Symbol
+    </h1>
+    <script>
+      // let id = Symbol();
+
+      // let user = {
+      //   name: "Daud",
+      //   [id]: 123
+      // };
+
+      // console.log(user[id]); // 123
+
+      // Misal object user berasal dari library yang tidak diketahui strukturnya
+      let age = Symbol();
+      let user = {
+        name: "Daud",
+        address: "Surabaya",
+        id: "0634",
+        kelamin: "perempuan",
+        [age]: 25
+      };
+
+      let users = [
+        {
+          name: "Daud",
+          address: "Surabaya",
+          id: "0634"
+        },
+        {
+          name: "Dauds",
+          address: "Surabayas",
+          id: "0634s"
+        }
+      ];
+
+      // Tambah key baru ke dalam user
+      let tes = Symbol();
+      let kelamin = Symbol();
+      user[tes] = "halo";
+      user[kelamin] = "laki-laki";
+
+      // data id milik object user masih ada
+      console.log(user.id); // 0634
+      console.log(user.kelamin); // 0634
+      console.log(user[kelamin]); // 0634
+      console.log(user[tes]); // 1122
+      console.log(user[age]); // 1122
+
+      for (let i in user) {
+        console.log(i); // name, address, id
+      }
+    </script>
+  </body>
+</html>

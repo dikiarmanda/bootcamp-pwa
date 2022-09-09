@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Belajar JavaScript Class Object</title>
+  </head>
+  <body>
+    <h1>Belajar JavaScript Class Object</h1>
+    <script>
+      class Mobil {
+        constructor(namaArg) {
+          this.nama = namaArg;
+        }
+
+        get namaMobil() {
+          return this.nama.toUpperCase();
+        }
+
+        set namaMobil(x) {
+          this.nama = "Mobil " + x;
+        }
+      }
+
+      let mobilRudi = new Mobil("Mitshubishi Pajero Sport");
+      // console.log(mobilRudi.nama);
+
+      // mobilRudi.nama = "Toyota Fortuner";
+      // console.log(mobilRudi.nama);
+
+      // mobilRudi.namaMobil("Toyota Fortuner") // is not a function
+
+      console.log(mobilRudi.namaMobil);
+      mobilRudi.namaMobil = "Toyota Rush";
+      console.log(mobilRudi.namaMobil);
+    </script>
+  </body>
+</html>

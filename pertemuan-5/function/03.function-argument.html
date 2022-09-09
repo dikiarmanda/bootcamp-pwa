@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Belajar JavaScript</title>
+  </head>
+  <body>
+    <h1>Belajar JavaScript</h1>
+    <script>
+      // function angka() {
+      //   console.log(arguments[0]);
+      //   console.log(arguments[1]);
+      //   console.log(arguments[2]);
+      //   console.log(arguments[3]);
+      // }
+
+      // angka(4, 8, 3, 7);
+
+      function angka() {
+        // return arguments.length;
+        let totalArg = arguments.length;
+        let hasil = 0;
+        for (let i = 0; i < totalArg; i++) {
+          hasil = hasil + arguments[i];
+        }
+        return hasil / totalArg;
+      }
+
+      let a = angka(4, 8);
+      console.log(a);
+
+      let b = angka(4, 8, 3, 7);
+      console.log(b);
+
+      let c = angka(4, 8, 3, 7, 4, 8, 3, 7);
+      console.log(c);
+    </script>
+  </body>
+</html>

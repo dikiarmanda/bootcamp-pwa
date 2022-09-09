@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Operator Spread</title>
+  </head>
+  <body>
+    <h1>
+      Operator Spread
+    </h1>
+    <script>
+      // spread object
+      let mahasiswa = {
+        nama: "Eka",
+        umur: 19,
+        jurusan: "Teknik Informatika"
+      };
+
+      let mahasiswa1 = {
+        ...mahasiswa,
+        umur: 20,
+        tempatLahir: "Jakarta"
+      };
+
+      console.log(mahasiswa1);
+      // {nama: "Eka", umur: 20, jurusan: "Teknik Informatika",
+      // tempatLahir: "Jakarta"}
+
+      // spread array
+      let nilai1 = ["a", "b", "c", "d"];
+      console.log(nilai1);
+      // Array [ "a", "b", "c", "d" ]
+
+      let nilai2 = [1, 2, 3, 4];
+      console.log(nilai2);
+      // Array [ 1, 2, 3, 4 ]
+
+      let nilai3 = [...nilai1, "e", "f"];
+      console.log(nilai3);
+      // Array [ "a", "b", "c", "d", "e", "f" ]
+
+      let nilai4 = [0, ...nilai2, 5, 6];
+      console.log(nilai4);
+      // Array [ 0, 1, 2, 3, 4, 5, 6 ]
+
+      let nilai5 = [...nilai2, ...nilai3];
+      console.log(nilai5);
+      // Array [ 1, 2, 3, 4, "a", "b", "c", "d", "e", "f" ]
+    </script>
+  </body>
+</html>

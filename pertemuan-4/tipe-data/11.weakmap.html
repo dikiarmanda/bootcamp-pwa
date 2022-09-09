@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Map</title>
+  </head>
+  <body>
+    <h1>
+      Tipe Data Map
+    </h1>
+    <script>
+      let foo = new WeakMap();
+      let obj1 = {};
+      let obj2 = { 1: "Hello" };
+
+      // tambah element
+      foo.set(obj1, 100);
+      foo.set(obj2, "Siska");
+
+      console.log(foo); // WeakMap {{…} => 'Siska', {…} => 100}
+
+      // akses element
+      console.log(foo.get(obj1)); // 100
+      console.log(foo.get(obj2)); // Siska
+
+      // cek element
+      console.log(foo.has(obj1)); // true
+      console.log(foo.size); // undefined
+
+      // hapus element
+      foo.delete(obj2);
+      console.log(foo); // WeakMap {{…} => 100}
+    </script>
+  </body>
+</html>

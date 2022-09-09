@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Belajar JavaScript</title>
+  </head>
+  <body>
+    <h1>Belajar JavaScript</h1>
+    <script>
+      // let web = "ioi-dev";
+
+      // if (web === "google") {
+      //   console.log('<a href="https://www.google.com">Website Google</a>');
+      // } else if (web === "facebook") {
+      //   console.log('<a href="https://www.facebook.com">Website Facebook</a>');
+      // } else if (web === "twitter") {
+      //   console.log('<a href="https://www.twitter.com">Website Twitter</a>');
+      // } else if (web === "ioi-dev") {
+      //   console.log('<a href="https://www.ioi-dev.com">Website ioi-dev</a>');
+      // } else {
+      //   console.log("Website tidak terdaftar");
+      // }
+
+      let website = "twitter";
+      let nilai = 3;
+
+      switch (website) {
+        case "google":
+          console.log('<a href="https://www.google.com">Website Google</a>');
+          break;
+        case "facebook":
+          console.log(
+            '<a href="https://www.facebook.com">Website Facebook</a>'
+          );
+          break;
+        case "twitter":
+          console.log('<a href="https://www.twitter.com">Website Twitter</a>');
+          switch (nilai) {
+            case 1:
+              console.log("ini angka 1");
+              break;
+            case 2:
+              console.log("ini angka 2");
+              break;
+            default:
+              console.log("angka tidak cocok");
+          }
+          break;
+        case "ioi-dev":
+          console.log('<a href="https://www.ioi-dev.com">Website ioi-dev</a>');
+          break;
+        default:
+          console.log("Website tidak terdaftar");
+      }
+    </script>
+  </body>
+</html>

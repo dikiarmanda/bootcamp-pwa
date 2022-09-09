@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Belajar JavaScript</title>
+  </head>
+  <body>
+    <h1>Belajar JavaScript</h1>
+    <script>
+      let mahasiswa = {
+        nama: "Daud",
+        jurusan: "Sistem Informasi",
+        ipk: {
+          semester1: 3.1,
+          semester2: 3.2,
+          semester3: 3.5
+        }
+      };
+
+      // stringify => merubah object/JSON menjadi string
+      // parse => merubah string JSON menjnadi object
+      // console.log(typeof JSON.stringify(mahasiswa));
+      // console.log(typeof JSON.parse(JSON.stringify(mahasiswa)));
+      let mahasiswaBaru = JSON.parse(JSON.stringify(mahasiswa));
+      // JSON (JavaScript Object Notation)
+
+      // let mahasiswaBaru = mahasiswa;
+
+      console.log(mahasiswa.ipk.semester1);
+      mahasiswaBaru.ipk.semester1 = 3.99;
+
+      console.log(mahasiswa.ipk.semester1); // SI
+      console.log(mahasiswaBaru.ipk.semester1); // TI
+
+      // FE => Object -> parse JSON -> kirim BER => BE nerima json => JSON parse dadi object pHP
+    </script>
+  </body>
+</html>

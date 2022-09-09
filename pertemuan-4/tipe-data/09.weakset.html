@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Set</title>
+  </head>
+  <body>
+    <h1>
+      Tipe Data Set
+    </h1>
+    <script>
+      let siswa = new WeakSet();
+
+      let andi = { nama: "andi" };
+      let rudi = { nama: "rudi" };
+      let sari = { nama: "sari" };
+
+      // tambah element
+      siswa.add(andi);
+      siswa.add(rudi);
+      siswa.add(sari);
+
+      console.log(siswa); // WeakSet {{nama:'andi'},{nama:"rudi"},{nama:"sari"}}
+
+      // cek element
+      console.log(siswa.has(andi)); // true
+      console.log(siswa.has(sari)); // true
+
+      console.log(siswa.size); // undefined
+
+      // hapus element
+      siswa.delete(sari);
+      console.log(siswa); // WeakSet {{nama: 'andi'},{nama:"rudi"}}
+    </script>
+  </body>
+</html>

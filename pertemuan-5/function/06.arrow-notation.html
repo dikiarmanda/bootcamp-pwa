@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Belajar JavaScript</title>
+  </head>
+  <body>
+    <h1>Belajar JavaScript</h1>
+    <script>
+      const salam = (kapan, siapa) => `Selamat ${kapan}, ${siapa}`;
+      function salams(kapan, siapa = "halo") {
+        let inikapan = kapan;
+        let inisiapa = siapa;
+        return `Selamat ${inikapan}, ${inisiapa}`;
+      }
+      console.log(salam("Pagi", "Nina")); // Selamat Pagi, Nina
+      console.log(salams("Nina")); // Selamat Pagi, Nina
+
+      const kuadrat = function (a) {
+        return a * a;
+      };
+      console.log(kuadrat(5));
+    </script>
+  </body>
+</html>
