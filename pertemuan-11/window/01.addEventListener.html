@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Belajar JavaScript</title>
+  </head>
+  <body>
+    <h1>Event</h1>
+    <p id="a"></p>
+    <script>
+      window.addEventListener("load", function () {
+        document.addEventListener("click", myClick);
+        document.addEventListener("mouseout", myMouseOut);
+        document.addEventListener("mousemove", myMouseMove);
+        function myClick() {
+          document.getElementById("a").innerHTML = alert("Hello there!");
+        }
+        function myMouseOut() {
+          document.getElementById("a").innerHTML = window.print();
+        }
+        function myMouseMove() {
+          document.getElementById("a").innerHTML = Math.random();
+        }
+      });
+    </script>
+  </body>
+</html>

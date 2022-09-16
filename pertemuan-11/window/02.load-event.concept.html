@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Belajar JavaScript</title>
+  </head>
+  <script>
+    window.addEventListener("load", function () {
+      var buttonFixed = document.getElementById("button");
+      var resultFixed = document.getElementById("res");
+      function loadResult() {
+        resultFixed.innerHTML = "Benar";
+      }
+      buttonFixed.addEventListener("click", loadResult);
+    });
+  </script>
+  <body>
+    <h1>Apakah anda lapar?</h1>
+    <button id="button">jeng jeng</button>
+    <p>Result: <span id="res"></span></p>
+  </body>
+</html>

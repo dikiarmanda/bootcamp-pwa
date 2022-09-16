@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Belajar JavaScript</title>
+  </head>
+  <body>
+    <h1>Belajar JavaScript</h1>
+    <script>
+      let foo = ["a", "b", "c", "d", "e"];
+      let c = [1, 2, 3, 4, 5];
+      function tes(item, indexs, arrayori) {
+        console.log(`index ke-${indexs}, berisi ${item}`);
+        console.log(arrayori);
+      }
+      foo.forEach(tes);
+      c.forEach(tes);
+      foo.forEach((item, indexs, arrayori) => {
+        console.log(`index ke-${indexs}, berisi ${item}`);
+        console.log(arrayori);
+      });
+
+      const tampil = (element, index) => {
+        console.log(`Index ke-${index}, berisi ${element}`);
+      };
+
+      let a = ["a", "b", "c", "d", "e"];
+      a.forEach(tampil);
+
+      let b = [1, 2, 3, 4, 5];
+      b.forEach(tampil);
+    </script>
+  </body>
+</html>

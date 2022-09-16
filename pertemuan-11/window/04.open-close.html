@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Belajar JavaScript</title>
+  </head>
+  <button onclick="openFunc()">Open it</button>
+  <button onclick="closeFunc()">Close it</button>
+  <script>
+    let myWindow;
+    function openFunc() {
+      myWindow = window.open(
+        "http://www.google.com",
+        "",
+        "width=500,height=500"
+      );
+    }
+    function closeFunc() {
+      myWindow.close();
+    }
+  </script>
+</html>

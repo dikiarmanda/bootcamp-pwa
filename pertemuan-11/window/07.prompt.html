@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Belajar JavaScript</title>
+  </head>
+  <button onclick="myReq()">Try it</button>
+  <p id="req"></p>
+  <script>
+    function myReq() {
+      let food = prompt("Hari ini, mau makan apa?", "dunno man");
+      if (food != null) {
+        document.getElementById("req").innerHTML = food + " is ready to serve!";
+      }
+    }
+  </script>
+</html>

@@ -1,0 +1,18 @@
+<h1>List of Groceries</h1>
+<p id="in">Indomie</p>
+<p id="be">Beras</p>
+<script>
+  pNode = document.getElementById("in");
+  function avail1() {
+    pNode.innerHTML = "Out of Stock";
+  }
+  // setTimeout(avail1, 3000);
+  setTimeout(() => {
+    pNode.innerHTML = "Out of Stock";
+  }, 3000);
+  pNode2 = document.getElementById("be");
+  function avail2() {
+    pNode2.innerHTML = "Already Bought";
+  }
+  setTimeout(avail2, 4000);
+</script>

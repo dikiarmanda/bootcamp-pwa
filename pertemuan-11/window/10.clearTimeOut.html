@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Belajar JavaScript</title>
+  </head>
+  <h1 id="a">Good Morning</h1>
+  <p>Click the button if it's not 6 pm yet</p>
+  <button onclick="stopFunction()">Stop it</button>
+  <script>
+    const myTimeout = setTimeout(myGreeting, 3000);
+    function myGreeting() {
+      document.getElementById("a").innerHTML = "Good Night";
+    }
+    function stopFunction() {
+      clearTimeout(myTimeout);
+    }
+  </script>
+</html>

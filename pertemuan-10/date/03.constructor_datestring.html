@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Belajar JavaScript</title>
+  </head>
+  <body>
+    <h1>Belajar JavaScript</h1>
+    <script>
+      let foo;
+
+      foo = new Date("8/17/1945");
+      console.log(foo); // Fri Aug 17 1945 00:00:00 GMT+0900 (Western...)
+
+      foo = new Date("8/17/1945 10:30");
+      console.log(foo); // Fri Aug 17 1945 10:30:00 GMT+0900 (Western...)
+
+      foo = new Date("8 17 1945 10:30:15");
+      console.log(foo); // Fri Aug 17 1945 10:30:15 GMT+0900 (Western...)
+
+      foo = new Date("17 Aug 1945 10:30:15");
+      console.log(foo); // Fri Aug 17 1945 10:30:15 GMT+0900 (Western...)
+
+      foo = new Date("Augustus 17, 1945 10:30:15");
+      console.log(foo); // Fri Aug 17 1945 10:30:15 GMT+0900 (Western...)
+    </script>
+  </body>
+</html>

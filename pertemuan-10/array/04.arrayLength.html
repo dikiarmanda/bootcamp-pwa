@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Belajar JavaScript</title>
+  </head>
+  <body>
+    <h1>Belajar JavaScript</h1>
+    <script>
+      let foo = ["a", "b", "c", "d", "e"];
+      console.log(foo.length); // 5
+
+      let bar = ["apel", "pisang", "anggur", "jambu"];
+      console.log(bar.length); // 4
+
+      console.log(["x", "y", "z"].length); // 3
+
+      for (let i = 0; i < bar.length; i++) {
+        console.log(bar[i]);
+      }
+
+      //length  dikurangi
+      let foo2 = ["a", "b", "c", "d", "e"];
+      console.log(foo2.length); // 5
+      console.log(foo2);
+
+      foo2.length = 3;
+      console.log(foo2);
+
+      //length  ditambah
+      let foo3 = ["a", "b", "c", "d", "e"];
+      console.log(foo3.length); // 5
+      console.log(foo3);
+
+      foo3.length = 7;
+      console.log(foo3);
+    </script>
+  </body>
+</html>

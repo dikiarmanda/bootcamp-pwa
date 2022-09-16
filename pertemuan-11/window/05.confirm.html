@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Belajar JavaScript</title>
+  </head>
+  <button onclick="myFunction()">PERGI</button>
+  <p id="b"></p>
+  <script>
+    function myFunction() {
+      let text = "Hari ini jadi atau engga?";
+      if (confirm(text) == false) {
+        text = "Yah so sad :(";
+      } else {
+        text = "WII LEGGO!";
+      }
+      document.getElementById("b").innerHTML = text;
+    }
+  </script>
+</html>
